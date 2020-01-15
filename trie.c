@@ -1,7 +1,3 @@
-//
-// Created by Yarden Samorai on 15/01/2020.
-//
-
 #include "trie.h"
 
 void memory_allocation_error(void) {
@@ -234,6 +230,3 @@ int main(int argc, char* argv[]) {
     free_trie(root);
     return 0;
 }
-
-
-
