@@ -133,14 +133,14 @@ void print_words_reverse(trie* root) {
     } else {
         if (root->current->is_word) {
             root->word[p]='\0';
-            printf("%s\t%ld\n",root->word,root->current->count);
+            printf("%s %ld\n",root->word,root->current->count);
         }
         --p;
         return;
     }
     if (root->current->is_word) {
         root->word[p]='\0';
-        printf("%s\t%ld\n",root->word,root->current->count);
+        printf("%s %ld\n",root->word,root->current->count);
     }
     --p;
 }
@@ -164,7 +164,7 @@ void print_words(trie* root) {
     root->word[p++]=root->current->letter;
     if (root->current->is_word) {
         root->word[p]='\0';
-        printf("%s\t%ld\n",root->word,root->current->count);
+        printf("%s %ld\n",root->word,root->current->count);
     }
     if (root->current->has_kids) {
         for(i=0; i<NUM_LETTERS; ++i) {
