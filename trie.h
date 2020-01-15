@@ -4,7 +4,7 @@
 
 #ifndef UNTITLED1_TRIE_H
 #define UNTITLED1_TRIE_H
-#define NUM_LETTERS ((int)26);
+#define NUM_LETTERS 26
 typedef enum {NO=0, YES=1} boolean;
 
 #include <stdio.h>
